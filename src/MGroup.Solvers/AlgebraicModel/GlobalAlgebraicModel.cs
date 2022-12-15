@@ -320,7 +320,7 @@ namespace MGroup.Solvers.AlgebraicModel
 				+ $" and that the type {typeof(TMatrix)} is used.");
 		}
 
-		internal GlobalVector CheckCompatibleVector(IGlobalVector vector)
+		public GlobalVector CheckCompatibleVector(IGlobalVector vector)
 		{
 			// Casting inside here is usually safe since all global vectors should be created by the this object
 			if (vector is GlobalVector globalVector)
